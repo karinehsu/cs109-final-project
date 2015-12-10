@@ -51,9 +51,9 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Downloads<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#">iPython Notebook</a></li>
-            <li><a href="#">CSV Files</a></li>
-            <li><a href="#">Github</a></li>
+            <li><a href="https://github.com/karinehsu/cs109-final-project/blob/master/MASTER.ipynb" target = '_blank'>iPython Notebook</a></li>
+            <li><a href="https://github.com/karinehsu/cs109-final-project/blob/master/combined.csv">CSV File Data</a></li>
+            <li><a href="https://github.com/karinehsu/cs109-final-project">Github</a></li>
           </ul>
         </li>
       </ul>
@@ -212,7 +212,8 @@
 					<div class="wow bounceInDown" data-wow-delay="0.4s">
 					<div class="section-heading">
 					<h1>The Data</h1>
-					<i class="fa fa-2x fa-angle-down"></i>
+          <i class="fa fa-2x fa-angle-down"></i>
+          
 
 					</div>
 					</div>
@@ -226,19 +227,27 @@
 				<hr class="marginbot-50">
 			</div>
 		</div>
+     <div class="row text-center">
+      <div class="col-sm-12 col-md-12">
+    <big>The American Ultimate Disc League (AUDL) is a professional ultimate frisbee league in North America. The data we worked with came from the 2015 AUDL Championships - http://theaudl.com/stats/allstandings. We also worked with Twitter data to see player, team, or league mentions.</big> 
+    </div>
+  </div>
 		 <div class="row text-center">
+      <br>
+
                 <div class="col-sm-6 col-md-6">
+
     				<div class="wow fadeInLeft" data-wow-delay="0.2s">
     				     <h2>25 Professional Teams</h2>
     				</div>
                 </div>
                  <div class="col-sm-6 col-md-6">
       				<div class="wow fadeInLeft" data-wow-delay="0.2s">
-      				     <h2>240,000 statistics</h2>
+      				     <h2>140,000 Play-by-play Statistics</h2>
       				</div>
                   </div>
             </div>
-        <div class="row text-center">
+<!--         <div class="row text-center">
             <div class="col-sm-6 col-md-6 vcenter">
 				<div class="wow fadeInLeft" data-wow-delay="0.2s">
 				    <img class = "fancybox" width="100%" src="/img/data/users.png" />
@@ -249,7 +258,7 @@
   				    <img class = "fancybox" width="100%" src="/img/data/ratings.png" />
   				</div>
               </div>
-        </div>
+        </div> -->
         <div class="row">
 			<div class="col-lg-2 col-lg-offset-5">
 				<hr class="marginbot-50">
@@ -258,28 +267,17 @@
 		<div class="row">
 		    <div class="col-sm-5 col-md-6">
       				<div class="wow fadeInLeft" data-wow-delay="0.2s">
-      				     <h2>x25 Professional Teams</h2>
+      				     <h2>~2,000 AUDL Tweets</h2>
       				</div>
                   </div>
               <div class="col-sm-6 col-md-6">
   				<div class="wow fadeInLeft" data-wow-delay="0.2s">
-  				     <h2>x statistic</h2>
+  				     <h2>1,000 Player/Team Tweets</h2>
   				</div>
               </div>
 		</div>
 		
-        <div class="row text-center">
-              <div class="col-sm-6 col-md-6 vcenter">
-      				<div class="wow fadeInLeft" data-wow-delay="0.2s">
-      				    <img class = "fancybox" width="100%" src="/img/data/beers.png" />
-      				</div>
-                  </div>
-              <div class="col-sm-6 col-md-6 vcenter">
-  				<div class="wow fadeInLeft" data-wow-delay="0.2s">
-  				    <img class = "fancybox" width="100%" src="/img/data/breweries.png" />
-  				</div>
-              </div>
-          </div>	
+       
 		</div>
 	</section>
 	<!-- /Section: data-->
@@ -333,12 +331,12 @@
                 </div>
                     <div class="col-sm-3 col-md-3 vcenter">
                				<div class="wow fadeInLeft" data-wow-delay="0.2s">
-                               <img class = "fancybox" width="100%" src="img/break_broken.png" />
+                               <img class = "fancybox" width="100%" src="img/broken_break.png" />
                				</div>
                         </div>
                      <div class="col-sm-3 col-md-3 vcenter">
            				<div class="wow fadeInLeft" data-wow-delay="0.2s">
-                           <img class = "fancybox" width="100%" src="img/broken_break.png" />
+                           <img class = "fancybox" width="100%" src="img/pulltime.png" />
            				</div>
                     </div>
            </div>	
@@ -358,6 +356,8 @@
 
                 We also thought it would be interesting to look at Percentage Broken of Offensive line Possessions vs. Percentage Broken of Defensive Line Posessions. We typically expect a lower percentage of broken on the O-line because it is easier to score a goal on Offense. Interestingly, the San Jose Spiders, the 2015 AUDL winner was broken on about 25% of their O line posessions - we would have expected much lower. Even the regional winners seemed to have variable percent broken on O-line possessions. On the other hand, the regional winners seem to have a pretty good D-line % broken though.
 
+                By running a logistic regression, we found that Pull time does not correlate with Probability of winning the point. In fact, any pull time correlates to about a 30% chance of winning the point.
+
             
 
 
@@ -370,23 +370,7 @@
     				<hr class="marginbot-50">
     			</div>
     		</div>
-         		<div class="row">
-         			 <div class="col-sm-12 col-md-12">
-                    				<div class="wow fadeInLeft" data-wow-delay="0.2s">
-                                     <h2>Twitter Analysis</h2>
-                    				</div>
-                            </div>
-         		</div>
-            <div class="row text-center">
-                         
-                  <div class="col-lg-10 col-lg-offset-1">
-          				<div class="wow fadeInLeft" data-wow-delay="0.2s">
-                           <a id="wordMap" class="iframe" href="/cloud.html"><img class="fancybox" width="50%" src="img/analysis/wordMap.png"></a><br/><br/>
-                                         We also wanted to explore Twitter mentions, more textual features of our dataset. 
-                               
-          				</div>
-                   </div>
-              </div>
+
                <div class="row">
           			<div class="col-lg-2 col-lg-offset-5">
           				<hr class="marginbot-50">
@@ -439,6 +423,25 @@
         </div>
             </div>
                         </div>
+
+
+                            <div class="row">
+               <div class="col-sm-12 col-md-12">
+                            <div class="wow fadeInLeft" data-wow-delay="0.2s">
+                                     <h2>Twitter Analysis</h2>
+                            </div>
+                            </div>
+            </div>
+            <div class="row text-center">
+                         
+                  <div class="col-lg-10 col-lg-offset-1">
+                  <div class="wow fadeInLeft" data-wow-delay="0.2s">
+                           <a id="wordMap" class="iframe" href="/cloud.html"><img class="fancybox" width="50%" src="img/analysis/wordMap.png"></a><br/><br/>
+                                         We also wanted to explore Twitter mentions, more textual features of our dataset. 
+                               
+                  </div>
+                   </div>
+              </div>
                   </div>
  	<!-- /Section: analysis-->
     
@@ -465,7 +468,7 @@
                        <div class="col-sm-6 col-md-6">
                             <div class="wow fadeInLeft text-left" data-wow-delay="0.2s">
                                      <big>
-                                       Given the relatively low accuracy score of our classifiers, the predictive value of our variables remains somewhat unclear - although our analysis was able to identify important trends in user preference, more information may be needed to implement a more accurate algorithm. Future work could look to include other important attributes like price, aroma, taste, and color that could all contribute to a user's perception of quality. A beer's perceived quality may to some degree be a product of psychology, difficult to detect/predict given the variables we worked with here. Ultimately, we were able to build a large database of beers and perform preliminary analyses that explored its major features and predictive possibilities. This large dataset also allowed us to visualize global trends in a novel way, providing some insight into the existing field of craft beer and the preferences of those who drink it.
+                                       Given the relatively low accuracy score of our classifiers, the predictive value of our variables remains somewhat unclear - although our analysis was able to identify important clusters in terms of player type and hightlight plays, more information may be needed to implement a more accurate algorithm. Future work could look to include data from past years to compare data over time.
                                          
                                      </big>
                             </div>
